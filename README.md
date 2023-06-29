@@ -1,2 +1,2 @@
 # British Algorithmic Olympiad Solutions (BAO)
-This repo contains contains solutions to BAO past papers.
+This repo contains (unofficial) solutions to BAO past papers.
