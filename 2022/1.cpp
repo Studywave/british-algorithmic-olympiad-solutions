@@ -119,6 +119,8 @@ pair<ll, ll> addFractions(pair<ll, ll> &frac1, pair<ll, ll> &frac2) // Just cros
 
 void part_d() // Personally I would prefer to implement this in python just in case there is an overflow
 {
+    // Baisically want to add up all fractions and simplify to get the final sum as a fraction.
+    // The denominator is the final answer since we want the smallest value of m that will make the entire expression be an integer.
     pair<ll, ll> frac1(1281, 4095);
     pair<ll, ll> frac2(216, 46655);
     pair<ll, ll> frac3(12, 2985983);
