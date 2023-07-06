@@ -114,31 +114,31 @@ void part_a()
         }
     }
 
-    // cout << depth_charges << "\n";
+    cout << depth_charges << "\n";
 
     /////////////////////////////////////////////////////
     /////////////////////////////////////////////////////
 
-    // Part c
+    // // Part c
 
-    int boundary_charges[4] = {0}; // {top, right, bottom, left}
-    for (int i = 0; i < p + 1; i++)
-    {
-        if (grid[p][i] == 1) // Top
-            boundary_charges[0] += 1;
-        if (grid[i][p] == 1) // Right
-            boundary_charges[1] += 1;
-        if (grid[0][i] == 1) // Bottom
-            boundary_charges[2] += 1;
-        if (grid[i][0] == 1) // Left
-            boundary_charges[3] += 1;
-    }
+    // int boundary_charges[4] = {0}; // {top, right, bottom, left}
+    // for (int i = 0; i < p + 1; i++)
+    // {
+    //     if (grid[p][i] == 1) // Top
+    //         boundary_charges[0] += 1;
+    //     if (grid[i][p] == 1) // Right
+    //         boundary_charges[1] += 1;
+    //     if (grid[0][i] == 1) // Bottom
+    //         boundary_charges[2] += 1;
+    //     if (grid[i][0] == 1) // Left
+    //         boundary_charges[3] += 1;
+    // }
 
-    int nautical_triangles = 0;
-    for (const int i : boundary_charges)
-        nautical_triangles += nCr(i, 2);
+    // int nautical_triangles = 0;
+    // for (const int i : boundary_charges)
+    //     nautical_triangles += nCr(i, 2);
 
-    cout << nautical_triangles + 1 << "\n"; // Must add 1 because of extra right-angle triangle in bottom left corner (sneaky)
+    // cout << nautical_triangles + 1 << "\n"; // Must add 1 because of extra right-angle triangle in bottom left corner (sneaky)
 }
 
 void part_b()
