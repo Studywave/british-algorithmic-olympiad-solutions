@@ -77,10 +77,9 @@ void part_a()
 {
     string shift, check;
     ll r;
-    int L, direction;
+    int L, direction = 1;
     cin >> shift >> check >> r;
     L = shift.size();
-    direction = 1;
     if (r < 0)
     {
         direction = -1;
