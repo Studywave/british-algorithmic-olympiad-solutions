@@ -1,29 +1,14 @@
 import time
 import sys
-from pathlib import Path
+import math
 
 ##############################################
 ##############################################
 ##############################################
 
-def solve():
-	def part_a():
-		pass
-
-	part_a()
-
-##############################################
-##############################################
-##############################################
-
-
-def usingFiles():
-    # Creates files if they do not exist
-	path = Path('../input.txt')
-	if not path.is_file():
-		file = open("../input.txt", "w")
-		file.close()
-    
+def usingFiles():    
+    # WARNING: Must create the files yourself
+    # Adjust the path depending on where the input/output files are
 	sys.stdin = open("../input.txt", "r")
 	sys.stdout = open("../output.txt", "w")
 
@@ -42,8 +27,18 @@ def usingTerminal():
     solve()
 
 if __name__ == "__main__":
-    usingFiles()
-    # usingTerminal()
+    # usingFiles()
+    usingTerminal()
+
+##############################################
+##############################################
+##############################################
+
+def part_a():
+	pass
+
+def solve():
+	part_a()
 
 
 
