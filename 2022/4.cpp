@@ -82,7 +82,7 @@ void part_b()
     {
         calcOrders(dest_indexes, 0, -1, 0, max_pack_size);
         total += max_pack_size;
-        perms += 1;
+        perms++;
         max_pack_size = 0; // Must reset to find max of next permutation
     } while (next_permutation(dest_indexes.begin(), dest_indexes.end()));
 
